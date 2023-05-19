@@ -91,7 +91,7 @@ const Card = () => {
         // setDay(displayDay);
 
         let diff = new Date() - new Date(`${inputYear}-${inputMonth}-${inputDay}`);
-        const age = new Date(difference)
+        const age = new Date(diff)
         let [displayYear, displayMonth, displayDay] = [age.getFullYear() - 1970, age.getMonth(), age.getDate()];
         setYear(displayYear);
         setMonth(displayMonth);
