@@ -152,10 +152,6 @@ html {
     overflow-x: hidden; /* Hide horizontal overflow */
     overflow-y: hidden; /* Hide vertical overflow */
   }
-  .container {
-    /* height: 100%; */
-    /* width: 100%; */
-  }
 
   .card {
     flex-basis: 65%;
@@ -179,6 +175,10 @@ html {
     font-weight: 700;
     font-size: 16px;
     color: black;
+  }
+
+  .input span {
+    font-size: 8px;
   }
 
   .input label {

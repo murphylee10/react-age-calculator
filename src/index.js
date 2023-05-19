@@ -103,6 +103,9 @@ const Card = () => {
         setYearError('')
         setInputClass('')
         setLabelClass('')
+        setDay('- -');
+        setMonth('- -');
+        setYear('- -');
 
         // validate date
         let valid = validateDate(inputDay, inputMonth, inputYear);
