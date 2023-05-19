@@ -6,6 +6,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## View Live Site
+
+Site Link: https://murphylee10.github.io/react-age-calculator/
+
 ## General Usage of Repo
 
 In the project directory, you can run:
