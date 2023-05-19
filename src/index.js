@@ -90,39 +90,39 @@ const Card = () => {
         // setMonth(displayMonth);
         // setDay(displayDay);
 
-        // let diff = new Date() - new Date(`${inputYear}-${inputMonth}-${inputDay}`);
-        // const age = new Date(diff)
-        // let [displayYear, displayMonth, displayDay] = [age.getFullYear() - 1970, age.getMonth(), age.getDate()];
-        // setYear(displayYear);
-        // setMonth(displayMonth);
-        // setDay(displayDay);
+        let diff = new Date() - new Date(`${inputYear}-${inputMonth}-${inputDay}`);
+        const age = new Date(diff)
+        let [displayYear, displayMonth, displayDay] = [age.getFullYear() - 1970, age.getMonth(), age.getDate()];
+        setYear(displayYear);
+        setMonth(displayMonth);
+        setDay(displayDay);
 
         //calculate the date of birth
-        const dateOfBirth = new Date(`${year}-${month}-${day}`)
-        //calculate the current date
-        const currentDate = new Date()
-        //calculate the difference between the current date and the date of birth
-        const difference = currentDate - dateOfBirth
-        //calculate the age - years, months, days
-        const age = new Date(difference)
-        //calculate the age - years
-        const ageYears = age.getFullYear() - 1970
-        ageYears == 0 ? setYear('0') : setYear(ageYears)
-        //calculate the age - months
-        const ageMonths = age.getMonth()
-        setMonth(ageMonths)
-        ageMonths == 0 ? setMonth('0') : setMonth(ageMonths)
-        //calculate the age - days
-        const ageDays = age.getDate() - 1
-        setDay(ageDays)
-        ageDays == 0 ? setDay('0') : setDay(ageDays)
+        // const dateOfBirth = new Date(`${year}-${month}-${day}`)
+        // //calculate the current date
+        // const currentDate = new Date()
+        // //calculate the difference between the current date and the date of birth
+        // const difference = currentDate - dateOfBirth
+        // //calculate the age - years, months, days
+        // const age = new Date(difference)
+        // //calculate the age - years
+        // const ageYears = age.getFullYear() - 1970
+        // ageYears == 0 ? setYear('0') : setYear(ageYears)
+        // //calculate the age - months
+        // const ageMonths = age.getMonth()
+        // setMonth(ageMonths)
+        // ageMonths == 0 ? setMonth('0') : setMonth(ageMonths)
+        // //calculate the age - days
+        // const ageDays = age.getDate() - 1
+        // setDay(ageDays)
+        // ageDays == 0 ? setDay('0') : setDay(ageDays)
     }
 
     const handleFormInput = (e) => {
         e.preventDefault()
-        const inputDay = parseInt(document.querySelector('#day').value);
-        const inputMonth = parseInt(document.querySelector('#month').value);
-        const inputYear = parseInt(document.querySelector('#year').value);
+        const inputDay = document.querySelector('#day').value;
+        const inputMonth = document.querySelector('#month').value;
+        const inputYear = document.querySelector('#year').value;
 
         // clear past errors (todo: clear red class as well)
         setDayError('')
@@ -135,7 +135,7 @@ const Card = () => {
         setYear('- -');
 
         // validate date
-        let valid = validateDate(inputDay, inputMonth, inputYear);
+        let valid = validateDate(parseInt(inputDay), parseInt(inputMonth), parseInt(inputYear));
         if (valid) {
             // display results
             displayAge(inputDay, inputMonth, inputYear);
