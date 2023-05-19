@@ -1,8 +1,8 @@
-# Getting Started with Create React App
+# Frontend Mentor Age Calculator Solution (ReactJS)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## General Usage of Repo
 
 In the project directory, you can run:
 
