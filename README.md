@@ -1,5 +1,7 @@
 # Frontend Mentor Age Calculator Solution (ReactJS)
 
+![Screenshot 2023-05-19 at 12 18 19 AM](https://github.com/murphylee10/react-age-calculator/assets/62623991/ebd261e3-17a8-4c31-8ada-31963d7c41d1)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## General Usage of Repo
