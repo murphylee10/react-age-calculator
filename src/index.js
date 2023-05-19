@@ -82,10 +82,17 @@ const Card = () => {
     }
 
     const displayAge = (inputDay, inputMonth, inputYear) => {
-        let birthday = new Date(`${inputYear}-${inputMonth}-${inputDay}`)
-        let diff = Date.now() - birthday.getTime();
-        let ageDate = new Date(diff); // in millis
-        let [displayYear, displayMonth, displayDay] = [Math.abs(ageDate.getUTCFullYear() - 1970), ageDate.getMonth(), ageDate.getDate()];
+        // let birthday = new Date(`${inputYear}-${inputMonth}-${inputDay}`)
+        // let diff = Date.now() - birthday.getTime();
+        // let ageDate = new Date(diff); // in millis
+        // let [displayYear, displayMonth, displayDay] = [Math.abs(ageDate.getUTCFullYear() - 1970), ageDate.getMonth(), ageDate.getDate()];
+        // setYear(displayYear);
+        // setMonth(displayMonth);
+        // setDay(displayDay);
+
+        let diff = new Date() - new Date(`${inputYear}-${inputMonth}-${inputDay}`);
+        const age = new Date(difference)
+        let [displayYear, displayMonth, displayDay] = [age.getFullYear() - 1970, age.getMonth(), age.getDate()];
         setYear(displayYear);
         setMonth(displayMonth);
         setDay(displayDay);
