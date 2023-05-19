@@ -146,3 +146,108 @@ html {
   float: right;
   margin-top: -45px;
 }
+
+@media screen and (max-width: 450px) {
+  body {
+    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-y: hidden; /* Hide vertical overflow */
+  }
+  .container {
+    /* height: 100%; */
+    /* width: 100%; */
+  }
+
+  .card {
+    flex-basis: 65%;
+    width: 80%;
+    height: 45%;
+    padding: 2.2em 2em 1.5em 2em;
+  }
+
+  .input-holder {
+    justify-content: center;
+    margin-bottom: 3em;
+  }
+
+  .input input {
+    width: 5em;
+    height: 2.5em;
+    padding: 0.1em;
+    padding-left: 0.6em;
+    margin: 0 1em 0 0;
+    border-radius: 8%;
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+  }
+
+  .input label {
+    color: hsl(0, 1%, 44%);
+    font-size: 0.8em;
+    letter-spacing: 2px;
+  }
+
+  .output {
+    font-weight: 800;
+    font-style: italic;
+    font-size: 2.2em;
+  }
+
+  .output h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+  }
+
+  .output h1 span {
+    color: hsl(259, 100%, 65%);
+  }
+
+  #submit img {
+    width: 60%;
+    /* margin: 0; */
+    /* padding: 0; */
+    /* flex-basis: 50%; */
+  }
+
+  #submit {
+    /* background-image: url("./images/icon-arrow.svg"); */
+
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+
+    /* background-position: center; */
+    background-color: hsl(259, 100%, 65%);
+    width: 5em;
+    height: 5em;
+    /* padding: 2em; */
+    border-radius: 50%;
+    border: none;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-content: center; */
+  }
+
+  .submit-area {
+    margin-bottom: 1em;
+  }
+
+  .hr hr {
+    height: 1px;
+    border: none;
+    background-color: hsl(0, 0%, 86%);
+    margin-top: 5px;
+  }
+
+  #submit {
+    display: inline;
+    /* flex-basis: auto; */
+    /* align-self: center; */
+    /* flex-shrink: 1; */
+    /* float: center; */
+    float: none;
+    margin: auto;
+    margin-top: -40px;
+    margin-left: 38%;
+  }
+}
