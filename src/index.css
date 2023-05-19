@@ -126,11 +126,6 @@ html {
   cursor: pointer;
 }
 
-.submit-area {
-  /* display: flex; */
-  /* justify-content: end; */
-  /* align-items: center; */
-}
 .hr {
   display: inline;
   /* flex-basis: auto; */
